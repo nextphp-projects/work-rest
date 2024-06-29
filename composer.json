@@ -1,0 +1,29 @@
+{
+    "name": "nextphp/rest",
+    "description": "Nextphp/Rest is a simple and flexible http routing library for restful PHP applications.",
+    "type": "library",
+    "keywords": ["rest", "restful", "routing", "router", "rest-router", "http-router"],
+    "homepage": "https://nextphp.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vedat Yıldırım",
+            "email": "vedatyildirimofficial@gmail.com",
+            "homepage": "https://vedatyildirim.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/nextphp-projects/issues",
+        "source": "https://github.com/nextphp-projects/rest"
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NextPHP\\Rest\\": "src/",
+            "NextPHP\\App\\": "app/"
+        }
+    }
+}

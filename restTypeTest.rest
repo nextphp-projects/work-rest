@@ -1,0 +1,52 @@
+@hostname=http://localhost
+@folder=work-rest
+@path=test/users
+@userAgent=NextPHP_RestClient
+
+
+### JSON formatında tüm kullanıcıları al
+GET {{hostname}}/{{folder}}/{{path}} HTTP/1.1
+Content-Type: application/json
+User-Agent: {{userAgent}}
+
+###
+
+### XML formatında tüm kullanıcıları al
+GET {{hostname}}/{{folder}}/{{path}}/xml HTTP/1.1
+Content-Type: application/xml
+User-Agent: {{userAgent}}
+
+###
+
+### HTML formatında tüm kullanıcıları al
+GET {{hostname}}/{{folder}}/{{path}}/html HTTP/1.1
+Content-Type: text/html
+User-Agent: {{userAgent}}
+
+###
+
+### Metin formatında tüm kullanıcıları al
+GET {{hostname}}/{{folder}}/{{path}}/text HTTP/1.1
+Content-Type: text/plain
+User-Agent: {{userAgent}}
+
+###
+
+### YAML formatında tüm kullanıcıları al
+GET {{hostname}}/{{folder}}/{{path}}/yaml HTTP/1.1
+Content-Type: application/x-yaml
+User-Agent: {{userAgent}}
+
+###
+
+### CSV formatında tüm kullanıcıları al
+GET {{hostname}}/{{folder}}/{{path}}/csv HTTP/1.1
+Content-Type: text/csv
+User-Agent: {{userAgent}}
+
+###
+
+### İkili (binary) formatında tüm kullanıcıları al
+GET {{hostname}}/{{folder}}/{{path}}/binary HTTP/1.1
+Content-Type: application/octet-stream
+User-Agent: {{userAgent}}
