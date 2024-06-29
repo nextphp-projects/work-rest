@@ -135,9 +135,11 @@ class CrudResource
             return $response->withStatus(404)->withJSON(['error' => 'User not found']);
         }
 
-        unset($this->users[$userId]);
+        // unset($this->users[$userId]);
+        $this->users[$userId]['deleted_at'] = date('Y-m-d H:i:s');
 
-        return $response->withStatus(204);
+        // return $response->withStatus(204);
+        return $response->withJSON($this->users[$userId]);
     }
 
     #[Options('/users')]
